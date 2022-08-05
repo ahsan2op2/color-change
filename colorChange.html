@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Colour Change</title>
+</head>
+<body>
+    <div class="contanier">
+        <h1>Background Colour:</h1>
+        <input type="text" name="Text" id="BackGround_Change">
+        <br><br>
+        <h1>Colour Change:</h1>
+
+        <input type="text" name="Text" id="Color_Change">
+        <br><br>
+    
+    </div>
+<script>
+
+        var body_Node = document.querySelector("body");
+        var BackGround_Change_Node = document.getElementById("BackGround_Change");
+        var Color_Change_Node = document.getElementById("Color_Change");
+
+        BackGround_Change_Node.addEventListener("keyup", function(event){
+            body_Node.style.backgroundColor = event.target.value;
+        })
+
+        Color_Change_Node.addEventListener("keyup" , function(event){
+
+        
+            body_Node.style.color = event.target.value;
+
+
+        } )
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+</body>
+</html>
